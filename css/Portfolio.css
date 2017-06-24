@@ -6,77 +6,94 @@ body {
   overflow-y: scroll;
   line-height: 30px;
 }
+
 img {
   max-width: 100%;
   display: block;
   margin: auto;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 2%;
 }
+
 header {
   padding-top: 15px;
 }
+
 header .container {
   max-width:980px;
   display: flex;
   position: relative;
 }
+
 header .line {
   border-bottom: solid 6px #BAAECD;
   width: 100%;
 }
+
 header .leftCol {
   width: 40%;
   height: 40%;
   float: left;
 }
+
 header .rightCol {
   width: 80%;
   height: 40%;
   text-align: right;
   float: right;
 }
+
 header .rightCol .name {
   padding-bottom: 5px;
   text-transform: uppercase;
 }
+
 header .rightCol .career {
   font-size: 17px;
   line-height: 30px;
   float: right;
 }
+
 header .face {
-  background: url("images/FullSizeRender1.jpg") no-repeat center;
+  background: url(../images/FullSizeRender1.jpg) no-repeat center;
   background-size: cover;
   border-radius: 30%;
   display: inline-block;
-  width:70px;
-  height:90px;
+  width: 70px;
+  height: 90px;
 }
+
 h2.heading {
   text-transform: uppercase;
   margin: 7% 0;
   border-bottom: dotted 2px #BAAECD;
   line-height: 4px;
   font-weight: 500;
-  color:#627788;
+  color: #627788;
 }
-h2.heading span {
+
+.heading span {
   background: #ebebeb;
   padding-right: 10px;
 }
+
 .container {
-  max-width:980px;
+  max-width: 980px;
   margin: auto;
   padding: 12px 22px;
 }
+
 #projects {
   display: flex;
   flex-flow: row wrap;
 }
+
 #projects .element {
   background: #fff;
   width: 30%;
@@ -88,30 +105,43 @@ h2.heading span {
   margin-right: auto;
   align-items: center;
 }
+
 #projects .element img{
   border-radius: 3px 3px 0 0;
 }
+
 #projects .element .text{
   padding: 5%;
 }
+
 #projects .element h3 {
-  font-size:20px;
+  font-size: 20px;
 }
+
 footer {
-  max-width:980px;
-  margin:0 auto;
-  padding:10px 20px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 10px 20px;
 }
+
 @media screen and (min-width: 600px) and (max-width: 850px)  {
   #projects .element{
-    width:40%;
+    width: 40%;
   }
 }
+
 @media screen and (max-width: 600px)  {
   #projects .element{
-    width:99%;
-    margin-right:0;
-    margin-left:0;
-    margin-bottom:20px;
+    width: 99%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
   }
+}
+.w3 {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: auto;
+  width: 88px;
+  height: 31px;
 }
