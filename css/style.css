@@ -1,65 +1,37 @@
 body {
-  background-color: black;
+  background-color: #303139;
+}
+
+.home-header {
+    width: 100%;
+    background-color: yellow;
+    position: absolute;
+}
+
+.header-logo {
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 20px;
+}
+
+.header-logo a {
+    display: block;
+    padding: 0;
+    outline: 0;
+    border: none;
+    width: 142px;
 }
 
 img {
-  max-width: 100%;
-  display: block;
-  margin: auto;
+  width: 100%;
 }
 
 h1, h2, h3 {
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 2%;
-}
-
-header {
-  padding-top: 15px;
-}
-
-header .container {
-  max-width: 980px;
-  display: flex;
-  position: relative;
-}
-
-header .line {
-  border-bottom: solid 6px #BAAECD;
-  width: 100%;
-}
-
-header .leftCol {
-  width: 40%;
-  height: 40%;
-  float: left;
-}
-
-header .rightCol {
-  width: 80%;
-  height: 40%;
-  text-align: right;
-  float: right;
-}
-
-header .rightCol .name {
-  padding-bottom: 5px;
-  text-transform: uppercase;
-}
-
-header .rightCol .career {
-  font-size: 17px;
-  line-height: 30px;
-  float: right;
-}
-
-header .face {
-  background: url(../images/FullSizeRender1.jpg) no-repeat center;
-  background-size: cover;
-  border-radius: 30%;
-  display: inline-block;
-  width: 70px;
-  height: 90px;
 }
 
 h2.heading {
