@@ -8,6 +8,14 @@ html, body {
 }
 
 body {
+  /* The image used */
+  background-image: url("../img/yuriy-garnaev-395879-unsplash.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #303139;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -42,7 +50,7 @@ img {
 /* ----------------------- Menu Styling ----------------------- */
 
 .header-nav {
-  background: #495057;
+  background: rgb(19, 19, 21);;
   text-align: center;
   padding: 2em 4em 4em 4em;
   height: 100%;
@@ -61,7 +69,7 @@ img {
   letter-spacing: .26em;
   margin-bottom: 4em;
   margin-top: .55em;
-  color: #CECFD0;
+  color: #228e3a;
 }
 
 .header-nav-list {
@@ -92,7 +100,7 @@ img {
 }
 
 hr {
-  border-top: 1px solid rgba(0, 0, 0, 0.35);
+  border-top: 1px solid #22394ba3;;
 }
 
 /* ----------------------- Social Styling ----------------------- */
@@ -122,7 +130,7 @@ hr {
   border-radius: 30%;
   top: 16px;
   right: 20px;
-  background-color: #6c757d4a;
+  background-color: #6c757d17;
   position: absolute;
   font: 0/0 a;
   z-index: 2;
@@ -167,13 +175,13 @@ hr {
 /* ----------------------- Menu Toggle ----------------------- */
 
 .header-menu-toggle {
+  color: #ced4da;
   position: fixed;
   right: 38px;
   top: 46px;
   height: 42px;
   width: 42px;
   line-height: 42px;
-  /* font-family: sans-serif; */
   font-size: 1.3em;
   text-transform: uppercase;
   letter-spacing: .3em;
@@ -184,7 +192,7 @@ hr {
 }
 
 .header-menu-toggle:focus {
-  color: rgba(0, 0, 0, .9);
+  color: #228e3a;
 }
 
 .header-menu-text {
@@ -204,7 +212,7 @@ hr {
   position: absolute;
   left: 50%;
   top: 48%;
-  background-color: #007bff;
+  background-color: #228e3a;
 }
 
 .header-menu-icon::before, .header-menu-icon::after {
