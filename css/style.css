@@ -50,7 +50,8 @@ img {
 /* ----------------------- Menu Styling ----------------------- */
 
 .header-nav {
-  background: rgb(19, 19, 21);;
+  background: rgb(19, 19, 21);
+  ;
   text-align: center;
   padding: 2em 4em 4em 4em;
   height: 100%;
@@ -100,7 +101,8 @@ img {
 }
 
 hr {
-  border-top: 1px solid #22394ba3;;
+  border-top: 1px solid #22394ba3;
+  ;
 }
 
 /* ----------------------- Social Styling ----------------------- */
@@ -110,11 +112,11 @@ hr {
 }
 
 .fa-github {
-  color: #333;
+  color: #423d3d;
 }
 
 .fa-envelope {
-  color: #CECFD0;
+  color: #495057;
 }
 
 .fa:hover {
@@ -202,7 +204,10 @@ hr {
   left: -90px;
   width: 70px;
   padding-left: 10px;
+  visibility: hidden;
 }
+
+/* ----------------------- Menu Hamburger ----------------------- */
 
 .header-menu-icon {
   display: block;
@@ -229,4 +234,107 @@ hr {
 
 .header-menu-icon::after {
   bottom: 9px;
+}
+
+/* ----------------------- Home Content ----------------------- */
+
+.home {
+  margin-top: 4em;
+  display: inline-block;
+  padding: 44px;
+}
+
+h1 {
+  color: #228e3a;
+  font-family: 'Righteous', cursive;
+  text-shadow: 1px 1px #f8f9fa;
+  font-size: 4em;
+}
+
+h2 {
+  font-family: 'News Cycle', sans-serif;
+  color: #ced4da;
+  text-shadow: 8px 5px 8px #000000d1;
+  padding-left: 2px;
+  font-size: 1.5rem;
+}
+
+/* ----------------------- Home Social Content ----------------------- */
+
+.social {
+  display: inline-flex;
+  font-family: 'Righteous', sans-serif;
+  list-style: none;
+  position: absolute;
+  bottom: 5%;
+  right: 2em;
+}
+
+.social li {
+  position: relative;
+  padding: 0 6px;
+}
+
+.social li a {
+  display: block;
+  width: 33px;
+  height: 33px;
+}
+
+.social i, .social span {
+  position: absolute;
+  transition: all 0.4s ease-out;
+}
+
+.social i {
+  font-size: 18px;
+  right: 0;
+  text-align: center;
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  line-height: calc(33px - 4px);
+  border: 2px solid #bcbdbd;
+  border-radius: 30%;
+}
+
+.social i.fa-linkedin:hover {
+  border-color: #0077B5;
+}
+
+.social i.fa-github:hover {
+  border-color: #423d3d;
+}
+
+.social i.fa.fa-envelope:hover {
+  border-color: #495057;
+}
+
+.social span {
+  font-size: 1.3em;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transform-origin: 100% 50%;
+}
+
+#LI {
+  color: #0077B5;
+  right: 2em;
+}
+
+#GH {
+  color: #423d3d;
+  right: 4.1em;
+}
+
+#EML {
+  color: #495057;
+  right: 6.3em;
+}
+
+.social li:hover span {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(.8);
 }
