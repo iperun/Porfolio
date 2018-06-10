@@ -52,7 +52,7 @@ img {
 .header-nav {
   background: rgb(19, 19, 21);
   text-align: center;
-  padding: 2em 4em 4em 4em;
+  padding: 2em 2em 2em 2em;
   height: 100%;
   position: fixed;
   right: 0;
@@ -340,8 +340,9 @@ h2 {
 
 /* ----------------------- Media Queries----------------------- */
 
-/* when mobile phones are turned sideways */
-@media only screen and (max-width: 823px) and (min-width: 570px) {
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width: 568px) and (max-width: 639px) and (orientation:landscape) {
   .header-nav-list li {
     line-height: 3em;
   }
@@ -351,17 +352,24 @@ h2 {
     list-style: none;
   }
   .header-nav h3 {
-    line-height: 12px;
+    line-height: 10px;
     letter-spacing: 6px;
-    margin-bottom: .5em;
-    margin-top: 1em;
+    margin-bottom: 10px;
+    margin-top: 1px;
+  }
+  .home {
+    margin-left: 3em;
+    padding: 18px;
   }
   h1 {
     padding-top: .5em;
   }
+  .header-nav-close {
+    visibility: hidden;
+  }
 }
 
-@media only screen and (max-width: 570px) {
+@media only screen and (min-width: 640px) and (max-width: 730px) and (orientation:landscape) {
   .header-nav-list li {
     line-height: 3em;
   }
@@ -371,118 +379,223 @@ h2 {
     list-style: none;
   }
   .header-nav h3 {
-    line-height: 5px;
-    letter-spacing: 1px;
-    margin-bottom: 16px;
-    margin-top: 1px;
+    line-height: 10px;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+    margin-top: 1em;
   }
-    h1 {
-      padding-top: 1px;
-  }
-}
-
-/* iphone 5/se medias */
-
-@media only screen and (max-width: 320px) {
-  .header-nav {
-    width: 100%;
-  }
-  .header-nav h3 {
-    line-height: 1px;
-    margin-bottom: 2em;
-    margin-top: 5px;
-    padding-top: 5px;
-  }
-  .header-nav-list li {
-    line-height: 3.2em;
-    padding-bottom: 1em;
-  }
-  .header-nav-list {
-    font-size: 1.2em;
-    padding-bottom: 2em;
-    list-style: none;
+  .home {
+    margin-left: 3em;
+    padding: 18px;
   }
   h1 {
-    padding-top: 1.2em;
-  }
-  h2 {
-    text-align: center;
-    padding-top: 3em;
-    padding-left: 1em;
+    padding-top: .8em;
   }
 }
 
-/* mobile devices */
-
-@media only screen and (max-width: 425px) and (min-width: 321px) {
-  .header-nav {
-    width: 100%;
-  }
+@media only screen and (min-width: 731px) and (max-width: 830px) and (orientation:landscape) {
   .header-nav-list li {
-    line-height: 3.5em;
+    line-height: 3em;
+  }
+  .header-nav-list {
+    font-size: 1em;
+    padding-bottom: 1px;
+    list-style: none;
+  }
+  .header-nav h3 {
+    line-height: 10px;
+    letter-spacing: 10px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  .home {
+    margin-left: 7em;
+    padding: 18px;
+  }
+  h1 {
+    padding-top: .8em;
+  }
+  h2 {
+    padding-left: 3em;
+    padding-top: .5em;
+  }
+}
+
+/* Smartphones Portrait----------- */
+
+@media only screen and (max-height: 660px) and (orientation: portrait) {
+  .header-nav-list li {
+    line-height: 3em;
   }
   .header-nav-list {
     font-size: 1.5em;
-    ;
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
     list-style: none;
   }
   .header-nav h3 {
-    line-height: 20px;
+    font-size: 2em;
+    line-height: 10px;
     letter-spacing: 10px;
-    margin-bottom: 2em;
-    margin-top: 1em;
-    padding-top: 1em;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
   }
-}
-
-@media only screen and (max-height: 640px) and (min-height: 569px) {
+  .home {
+    margin-top: 6em;
+    margin-left: 2em;
+    padding: 20px;
+  }
+  .header-nav {
+    width: 100%;
+  }
   h1 {
     padding-top: 1.5em;
   }
   h2 {
-    text-align: center;
-    padding-top: 3.7em;
-    padding-left: 2em;
-  }
-}
-
-@media only screen and (max-height: 667px) and (min-height: 641px) {
-  h1 {
-    padding-top: 1.7em;
-  }
-  h2 {
-    text-align: center;
-    padding-top: 4em;
-    padding-left: 2.5em;
-  }
-}
-
-@media only screen and (max-height: 736px) and (min-height: 668px) {
-  h1 {
+    padding-left: 1.2em;
     padding-top: 2em;
   }
+}
+
+@media only screen and (min-height: 661px) and (max-height: 900px) and (orientation: portrait)  {
+  .header-nav-list li {
+    line-height: 3em;
+  }
+  .header-nav-list {
+    font-size: 1.7em;
+    padding-bottom: 2em;
+    list-style: none;
+  }
+  .header-nav h3 {
+    font-size: 2.5em;
+    line-height: 10px;
+    letter-spacing: 10px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  .home {
+    margin-top: 8.5em;
+    margin-left: 3em;
+    padding: 30px;
+  }
+  .header-nav {
+    width: 100%;
+  }
+  h1 {
+    padding-top: 1.5em;
+  }
   h2 {
-    text-align: center;
-    padding-top: 5em;
-    padding-left: 4em;
+    padding-left: 1.2em;
+    padding-top: 3.5em;
   }
 }
 
-@media only screen and (max-height: 823px) and (min-height: 737px) {
-  h1 {
-    padding-top: 2.5em;
+
+/* Tablet Device Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .header-nav-list li {
+      line-height: 3em;
+    }
+    .header-nav-list {
+      font-size: 1.7em;
+      padding-bottom: 2em;
+      list-style: none;
+    }
+    .header-nav h3 {
+      font-size: 2em;
+      line-height: 10px;
+      letter-spacing: 10px;
+      margin-bottom: 2em;
+      margin-top: 2em;
+    }
+    .home {
+      margin-top: 8em;
+      margin-left: 12em;
+      padding: 54px;
+    }
+    h1 {
+      font-size: 5em;
+      padding-top: 1.5em;
+    }
+    h2 {
+      padding-left: 3em;
+      padding-top: 5em;
+    }
+    .header-menu-text {
+      visibility: visible;
+    }
+}
+
+/* Laptop/ Large screens */
+
+@media only screen and (min-width: 831px) {
+  .header-nav-list li {
+    line-height: 3em;
   }
-  h2 {
-    text-align: center;
-    padding-top: 5em;
-    padding-left: 4em;
+  .header-nav-list {
+    font-size: 1.7em;
+    padding-bottom: 2em;
+    list-style: none;
   }
   .header-nav h3 {
     font-size: 2em;
+    line-height: 10px;
+    letter-spacing: 10px;
     margin-bottom: 2em;
+    margin-top: 1.5em;
   }
-  .header-nav-list {
-    margin-bottom: 2em;
-    font-size: 1.7em;
+  .home {
+    margin-top: 5em;
+    margin-left: 21em;
+    padding: 40px;
+  }
+  h1 {
+    font-size: 5em;
+    padding-top: 1.5em;
+  }
+  h2 {
+    padding-left: 3.6em;
+    padding-top: 3.5em;
+  }
+  .header-menu-text {
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-height: 1200px) {
+  {
+    .header-nav-list li {
+      line-height: 3em;
+    }
+    .header-nav-list {
+      font-size: 1.7em;
+      padding-bottom: 2em;
+      list-style: none;
+    }
+    .header-nav h3 {
+      font-size: 2em;
+      line-height: 10px;
+      letter-spacing: 10px;
+      margin-bottom: 2em;
+      margin-top: 1.5em;
+    }
+    .home {
+      margin-top: 5em;
+      margin-left: 21em;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 7em;
+      padding-top: 1.5em;
+    }
+    h2 {
+      padding-left: 3.6em;
+      padding-top: 3.5em;
+    }
+    .header-menu-text {
+      visibility: visible;
+    }
 }
