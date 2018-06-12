@@ -1,0 +1,56 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*---------- NavBar ---------- */
+
+.navbar {
+  padding: 22px 22px 22px 22px;
+  background-color: rgba(0, 0, 0, .95);
+  transition: all .5s ease-in;
+}
+
+.navbar li {
+  padding-left: 17px;
+}
+
+.navbar a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 14px;
+  transition: all .5s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #228e3a;
+}
+
+.navbar-toggler {
+  border-color: rgb(255, 255, 255);
+  transition: all .5s ease-in-out;
+}
+
+.navbar-toggler:hover {
+  border-color: #228e3a;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+a.navbar-logo {
+  font-size: 23px;
+}
+
+.show {
+  text-align: center;
+  padding-top: 10px;
+}
