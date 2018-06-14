@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
   font-family: 'Titillium Web', sans-serif;
+  height: 100%;
 }
 
 * {
@@ -53,4 +54,29 @@ a.navbar-logo {
 .show {
   text-align: center;
   padding-top: 10px;
+}
+
+/* ---------------About Page ---------------*/
+
+#aboutpage {
+  padding-top: 3em;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.me {
+  padding-bottom: .5em;
+}
+
+.info-text {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.picture {
+  padding-bottom: 2em;
+}
+
+.about {
+  height: 100vh;
+  background-color: #E1E2DF;
 }
