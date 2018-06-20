@@ -59,12 +59,9 @@ a.navbar-logo {
 /* ---------------About Page ---------------*/
 
 #aboutpage {
-  padding-top: 3em;
+  padding-top: 5em;
   font-family: 'Titillium Web', sans-serif;
-}
-
-.me {
-  padding-bottom: .5em;
+  text-align: center;
 }
 
 .info-text {
@@ -72,11 +69,8 @@ a.navbar-logo {
   padding-right: 3em;
 }
 
-.picture {
-  padding-bottom: 2em;
-}
-
 .about {
   height: 100vh;
-  background-color: #E1E2DF;
+  background-image: url("../img/oliver-sjostrom-584975-unsplash.jpg");
+  background-size: cover;
 }
