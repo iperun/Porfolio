@@ -2,7 +2,8 @@ body {
   overflow-x: hidden;
   font-family: 'Titillium Web', sans-serif;
   height: 100%;
-  background: linear-gradient(to bottom right, black 0%, black 43%, #000000 43%, white 40%, white 100%);
+  background: linear-gradient(146deg, black 0%, black 38%, #000000 39%, #0f1014 40%, #ffffff 70%);
+  background-color: #0f1014;
 }
 
 * {
@@ -71,17 +72,55 @@ a.navbar-logo {
   padding-right: 3em;
 }
 
-.about {
-  height: 86vh;
+.about {}
+
+.avatar {
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 86% !important;
+}
+
+.mainpic {
+  padding-top: 10px;
 }
 
 .pic {
-  padding-left: 0px;
-  margin-left: 0px;
+  /* padding-left: 0px;
+  margin-left: 0px; */
+}
+
+.hi {
+  color: #fff;
+  font-size: 52px;
+  font-family: 'Montserrat', serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+p {
+  color: #212121;
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 1px;
+  line-height: 34px;
+}
+
+.jumbotron {
+  background-color: #e9ecef00;
 }
 
 /* ---------------Project Page ---------------*/
 
-#project {
-  border-top: 1px solid #E6ECF8;
+.works {
+  padding-top: 2em;
+}
+
+#project {}
+
+
+/* --------------- Media Queries ---------------*/
+
+@media only screen and (max-width: 767px) {
+  p {
+    color: #fff;
 }
