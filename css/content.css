@@ -2,6 +2,7 @@ body {
   overflow-x: hidden;
   font-family: 'Titillium Web', sans-serif;
   height: 100%;
+  background: linear-gradient(to bottom right, black 0%, black 43%, #000000 43%, white 40%, white 100%);
 }
 
 * {
@@ -60,7 +61,7 @@ a.navbar-logo {
 /* ---------------About Page ---------------*/
 
 #aboutpage {
-  padding-top: 5em;
+  padding-top: 3.5em;
   font-family: 'Titillium Web', sans-serif;
   text-align: center;
 }
@@ -71,9 +72,16 @@ a.navbar-logo {
 }
 
 .about {
-  /* height: 100vh; */
-  background-image: url("");
-  background-size: cover;
+  height: 86vh;
+}
+
+.pic {
+  padding-left: 0px;
+  margin-left: 0px;
 }
 
 /* ---------------Project Page ---------------*/
+
+#project {
+  border-top: 1px solid #E6ECF8;
+}
