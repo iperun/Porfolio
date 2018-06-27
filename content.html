@@ -37,10 +37,10 @@
           <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-remove" href="#Credentials">Credentials</a>
+          <a class="nav-link nav-remove" href="#credentials">Credentials</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Contact">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -130,7 +130,72 @@
     </div>
   </section>
   <!-- /Projects-->
+  <!-- Credentials -->
 
+
+  <!-- /Credentials-->
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container contactpage">
+      <h2>Contact Me</h2>
+      <h3>Thanks for visiting!</h3>
+      <h4> Leave me a message:</h4>
+      <div class="row split-contact">
+        <div class="column map-contact">
+          <div id="map" style="width:100%;height:500px"></div>
+        </div>
+        <div class="column map-contact">
+          <form method="POST" autocomplete="off" action="https://formspree.io/peruni101@gmail.com">
+            <div class="form-row">
+              <div class="form-group col-md-6 colmns">
+                <label for="validationCustom01">Name:</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Your Name" name="name" value="" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6 colmns">
+                  <label for="inputEmail4">Email:</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="_replyto" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12 colmns">
+                  <label for="validationCustom02">Subject:</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Subject" name="subject">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12 colmns">
+                  <label for="validationCustom03">Leave a Message Here!</label>
+                  <textarea class="form-control" id="validationCustom03" placeholder="Message" name="message"></textarea>
+                </div>
+              </div>
+              <div class="container text-center btn">
+                <button type="submit" class="btn btn-primary">Send</button>
+              </div>
+          </form>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Initialize Google Maps -->
+  <script>
+    function myMap() {
+      var myCenter = new google.maps.LatLng(27.9658533, -82.8001026);
+      var mapCanvas = document.getElementById("map");
+      var mapOptions = {
+        center: myCenter,
+        zoom: 12
+      };
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+      var marker = new google.maps.Marker({
+        position: myCenter
+      });
+      marker.setMap(map);
+    }
+  </script>
+
+  <!-- /Contact -->
 
   <!-- Jquery Script -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -140,6 +205,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <!-- Javascript Main -->
   <script src="js/content.js"></script>
+  <!-- Google Map Api -->
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&key=AIzaSyCJuEMieAPU-az8fmXVa1JcT5Ug6qEHqS0&v=3&callback=myMap">
+  </script>
 
 </body>
 

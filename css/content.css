@@ -271,6 +271,29 @@ p {
   font-weight: 400;
 }
 
+/* --------------- Credentials ---------------*/
+
+/* --------------- Contact ---------------*/
+
+.contactpage {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.map-contact {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.split-contact:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* --------------- Media Queries ---------------*/
 
 @media only screen and (max-width: 767px) {
@@ -283,5 +306,12 @@ p {
   .works {
     padding-left: 1em;
     padding-right: 1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .map-contact {
+    width: 100%;
+    margin-top: 0;
   }
 }
