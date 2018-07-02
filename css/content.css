@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
   font-family: 'Titillium Web', sans-serif;
   height: 100%;
-  background: linear-gradient(146deg, black 0%, black 28%, #6c757d 29.1%, #0f1014 29.3%, #ffffff 70%);
+  background: linear-gradient(146deg, black 0%, black 25%, #6c757d 26.1%, #0f1014 26.3%, #ffffff 70%);
   background-color: #0f1014;
 }
 
@@ -61,32 +61,38 @@ a.navbar-logo {
 
 /* ---------------About Page ---------------*/
 
-#aboutpage {
-  padding-top: 5em;
+#about {
+  padding-top: 6em;
+  padding-bottom: 2em;
   font-family: 'Titillium Web', sans-serif;
   text-align: center;
 }
 
 .info-text {
+  padding-top: 3.2em;
   padding-left: 3em;
   padding-right: 3em;
+  color: #cbd9e4;
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 1px;
+  line-height: 34px;
 }
 
-.about {}
+.container.pic {
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: none;
+}
 
 .avatar {
   border-radius: 50%;
   border: 1px solid white;
-  width: 74% !important;
+  width: 58% !important;
 }
 
 .mainpic {
   padding-top: 10px;
-}
-
-.pic {
-  /* padding-left: 0px;
-  margin-left: 0px; */
 }
 
 .hi {
@@ -97,20 +103,39 @@ a.navbar-logo {
   text-transform: uppercase;
 }
 
-.info-text {
-  color: #cbd9e4;
-  font-size: 20px;
-  font-family: 'Roboto Slab', serif;
-  letter-spacing: 1px;
-  line-height: 34px;
-}
-
 .jumbotron {
   background: none;
   padding-top: 8px;
 }
 
 /* ---------------Project Page ---------------*/
+
+#project {
+  margin-left: 25%;
+  width: 50%;
+  margin-top: 1px;
+  margin-bottom: 3em;
+  border: 0;
+  border-top: 1px solid #dee2e64f;
+}
+
+#second {
+  margin-left: 32%;
+  width: 36%;
+  margin-top: 1px;
+  margin-bottom: 3em;
+  border: 0;
+  border-top: 1px solid #dee2e64f;
+}
+
+.title {
+  font-family: 'Montserrat', serif;
+  font-size: 2.5em;
+  color: #e9ecef;
+  text-shadow: 2px 1px 1px #212529;
+  padding-top: 1.2em;
+  padding-bottom: 2em;
+}
 
 .works {
   padding-left: 4em;
@@ -274,76 +299,80 @@ a.navbar-logo {
 /* --------------- Credentials ---------------*/
 
 #myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+#myImg:hover {
+  opacity: 0.7;
+}
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 10em;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 10em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 42%;
-    max-width: 700px;
+  margin: auto;
+  display: block;
+  width: 42%;
+  max-width: 700px;
 }
 
 #caption {
-    margin: auto;
-    display: block;
-    width: 42%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+  margin: auto;
+  display: block;
+  width: 42%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
 }
 
 .modal-content, #caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
 }
 
 .close {
-    position: absolute;
-    top: 2em;
-    right: 5em;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 2em;
+  right: 5em;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
-
 
 /* --------------- Contact ---------------*/
 
-.contactpage {
+#contact {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 10px;
@@ -369,6 +398,12 @@ a.navbar-logo {
 /* --------------- Media Queries ---------------*/
 
 @media only screen and (max-width: 767px) {
+  body {
+    background: #212529;
+  }
+  .avatar {
+    width: 90% !important;
+  }
   .jumbotron {
     padding-top: 2em;
   }
@@ -376,19 +411,25 @@ a.navbar-logo {
     padding-left: 1em;
     padding-right: 1em;
   }
-}
-
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-    .close {
-    visibility: hidden;
-}
-
-@media screen and (max-width: 600px) {
-  .map-contact {
+  #project {
+    margin-left: 0;
     width: 100%;
-    margin-top: 0;
+  }
+  #second {
+    visibility: hidden;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+  .close {
+    visibility: hidden;
+  }
+  @media screen and (max-width: 600px) {
+    .map-contact {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
