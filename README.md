@@ -1,5 +1,5 @@
 # Portfolio
-Portfolio with HTML, CSS, and Images
+Portfolio
 
 <!-- favicon -->
 https://www.freefavicon.com/freefavicons/objects/
