@@ -63,7 +63,7 @@
             <div class="jumbotron">
               <h2 class="hi">Hello, I'm Ivan</h2>
               <br>
-              <p class="info-text">Welcome to my portfolio website!  </p>
+              <p class="info-text">Welcome to my portfolio website! </p>
             </div>
           </div>
         </div>
@@ -160,22 +160,22 @@
   <!-- Contact -->
   <section class="contactpage" id="contact">
     <div class="container contactpage">
-      <h2>Contact Me</h2>
-      <h3>Thanks for visiting!</h3>
-      <h4> Leave me a message:</h4>
+      <h2 id="cnt">Contact Me</h2>
+      <h3 id="thanks">Thanks for visiting!</h3>
+      <h4 id="mesg"> Leave me a message:</h4>
       <div class="row split-contact">
-        <div class="column map-contact">
-          <div id="map" style="width:100%;height:500px"></div>
+        <div class="column col-md-6 map-contact">
+          <div id="map" style="width:100%;height:420px"></div>
         </div>
-        <div class="column map-contact">
+        <div class="column col-md-6 info-contact">
           <form method="POST" autocomplete="off" action="https://formspree.io/peruni101@gmail.com">
             <div class="form-row">
-              <div class="form-group col-md-6 colmns">
+              <div class="form-group col-md-12 colmns">
                 <label for="validationCustom01">Name:</label>
                 <input type="text" class="form-control" id="validationCustom01" placeholder="Your Name" name="name" value="" required>
               </div>
               <div class="form-row">
-                <div class="form-group col-md-6 colmns">
+                <div class="form-group col-md-12 colmns">
                   <label for="inputEmail4">Email:</label>
                   <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="_replyto" required>
                 </div>
@@ -198,11 +198,13 @@
           </form>
           </div>
         </div>
+        <hr id="socialz">
         <div class="col-md-12 zocial-contact">
           <a class="zocial linkedin" href="https://www.linkedin.com/in/ivan-perun/" target="_blank">LinkedIn</a>
           <a class="zocial github" href="https://github.com/iperun" target="_blank">Github</a>
         </div>
       </div>
+    </div>
   </section>
   <!-- /Contact -->
 

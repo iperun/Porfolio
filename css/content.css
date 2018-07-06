@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
   font-family: 'Titillium Web', sans-serif;
   height: 100%;
-  background: linear-gradient(146deg, black 0%, black 22%, #6c757d 23.1%, #0f1014 23.3%, #ffffff 70%);
+  background: linear-gradient(146deg, black 0%, black 19%, #6c757d 20.1%, #0f1014 20.3%, #ffffff 70%);
   background-color: #0f1014;
 }
 
@@ -318,7 +318,7 @@ h4 {
 
 #cred-title {
   text-align: center;
-  padding: 4em 1px;
+  padding: 4em 10px;
   font-family: 'Montserrat', serif;
   font-size: 2.5em;
   color: #e9ecef;
@@ -407,15 +407,45 @@ h4 {
 
 #contact {
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 10px;
 }
 
+#cnt {
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 2em;
+  font-family: 'Montserrat', serif;
+  font-size: 2.5em;
+  color: #6c757d;
+  text-shadow: 2px 1px 1px #495057;
+}
+
+.btn {
+  width: 30%;
+  display: block;
+}
+
+.btn-primary {
+  width: 100%;
+}
+
 .map-contact {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
+  margin-top: 42px;
   padding: 20px;
+}
+
+.info-contact {
+  margin-top: 42px;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.form-row {
+  display: block;
+}
+
+.colmns {
+  max-width: 100%;
 }
 
 .split-contact:after {
@@ -426,6 +456,35 @@ h4 {
 
 .zocial-contact {
   text-align: center;
+  font-size: 14px;
+  padding-top: 2em;
+}
+
+.linkedin, .github {
+  margin-right: 10px;
+}
+
+#map {
+  border-radius: 10px;
+}
+
+#thanks, #mesg {
+  text-align: center;
+  padding: 32px 32px;
+}
+
+#socialz {
+  margin-left: 25%;
+  width: 50%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 0;
+  border-top: 1px solid #dee2e6;
+}
+
+footer {
+  padding-top: 1em;
+  padding-left: 10px;
 }
 
 /* --------------- Media Queries ---------------*/
@@ -451,10 +510,23 @@ h4 {
   #second {
     visibility: hidden;
   }
-  h4 {
+  #udacity, p, h4 {
     color: #fff;
   }
-  #udacity, p {
+  .map-contact {
+    padding: 20px 1px;
+  }
+  #cnt {
+    color: #e9ecef;
+    text-shadow: 2px 1px 1px #212529;
+  }
+  .btn {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  #contact {
+    text-align: center;
     color: #fff;
   }
 }
