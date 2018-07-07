@@ -430,6 +430,12 @@ footer {
 
 /* Smartphones Portrait----------- */
 
+@media only screen and (max-height: 570px) and (orientation: portrait) {
+  .home {
+    margin-top: 2.4em!important;
+  }
+}
+
 @media only screen and (max-height: 660px) and (orientation: portrait) {
   .header-nav-list li {
     line-height: 3em;
