@@ -498,6 +498,13 @@ footer {
   }
   .jumbotron {
     padding-top: 2em;
+    padding-bottom: 10px;
+  }
+  #about {
+    padding-bottom: 10px;
+  }
+  .title {
+    padding-top: 20px;
   }
   .works {
     padding-left: 1em;
@@ -508,15 +515,24 @@ footer {
     width: 100%;
   }
   #second {
+    margin-bottom: 1px;
     visibility: hidden;
   }
   #udacity, p, h4 {
     color: #fff;
   }
+  #cred-title {
+    padding: 2em 10px;
+  }
+  .split-cred {
+    padding-bottom: 4em;
+  }
   .map-contact {
     padding: 20px 1px;
   }
   #cnt {
+    padding-top: 1.1em;
+    padding-bottom: 40px;
     color: #e9ecef;
     text-shadow: 2px 1px 1px #212529;
   }
@@ -528,6 +544,12 @@ footer {
   #contact {
     text-align: center;
     color: #fff;
+  }
+  #thanks {
+    padding: 20px 20px;
+  }
+  footer {
+    text-align: center;
   }
 }
 
