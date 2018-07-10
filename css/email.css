@@ -17,12 +17,12 @@ body {
 }
 
 .grp {
-  width: 52%;
+  text-align: center;
   margin: 0 auto;
 }
 
 .btn {
-  margin-top: 20px;
+  margin-top: 5px;
   text-align: center;
 }
 
@@ -64,4 +64,10 @@ body {
   100% {
     background-position: 0% 50%
   }
+}
+
+#validationCustom03 {
+  margin: 10px;
+  height: 40px;
+  width: 170px;
 }
