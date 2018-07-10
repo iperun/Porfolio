@@ -370,7 +370,8 @@ h2 {
 
 /* Smartphones (landscape) ----------- */
 
-@media only screen and (min-width: 568px) and (max-width: 639px) and (orientation:landscape) {
+
+@media only screen and (max-width: 639px) and (orientation:landscape) {
   .header-nav-list li {
     line-height: 3em;
   }
