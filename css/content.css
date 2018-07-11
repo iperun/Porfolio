@@ -522,7 +522,8 @@ footer {
     color: #fff;
   }
   #cred-title {
-    padding: 1.6em 10px;
+    padding: 2em 10px;
+    padding-bottom: 40px;
   }
   .split-cred {
     padding-bottom: 4em;
@@ -531,10 +532,13 @@ footer {
     padding: 20px 1px;
   }
   #cnt {
-    padding-top: 1.4em;
+    padding-top: 2.2em;
     padding-bottom: 40px;
     color: #e9ecef;
     text-shadow: 2px 1px 1px #212529;
+  }
+  .split-cred {
+    padding-bottom: 10px;
   }
   .btn {
     width: 100%;
