@@ -4,6 +4,10 @@
   box-sizing: border-box
 }
 
+Html, body {
+  overflow-x: hidden
+}
+
 body {
   font-family: 'Titillium Web', sans-serif;
   height: 100%;
