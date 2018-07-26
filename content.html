@@ -15,13 +15,10 @@
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
   <!-- Zocial -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.2.0/css/zocial.min.css">
   <!-- CSS style sheet -->
   <link rel="stylesheet" type="text/css" href="css/content.min.css">
-  <!-- Jquery Script -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
@@ -38,7 +35,7 @@
           <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#project">Projects</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-remove" href="#credentials">Credentials</a>
@@ -53,6 +50,18 @@
 
   <!-- About Me  -->
   <section class="aboutpage" id="about">
+    <div id="scene">
+      <div class="layer" id="layer-1">
+        <div class="floaty" id="floaty-1"></div>
+      </div>
+      <div class="layer" id="layer-2">
+        <div class="floaty" id="floaty-2"></div>
+      </div>
+      <div class="layer" id="layer-3">
+        <div class="floaty" id="floaty-3"></div>
+      </div>
+    </div>
+
     <div class="container pic">
       <div class="row mb-2 text-center">
         <div class="col-md-6 mainpic">
@@ -63,22 +72,19 @@
         <div class="row mb-2 text-center">
           <div class="col-md-6 ml-auto p-2 info">
             <div class="jumbotron">
-              <h2 class="hi">Hello, I'm Ivan</h2>
+              <h2 class="hi">Hi, I'm <span class="ivan"> Ivan</span>!</h2>
               <br>
               <p class="info-text">Welcome to my portfolio website!
-                <br> As a developer I absolutely love being able to own all aspects of application development: from design and creation of the applications front-end work, to solving and putting the pieces together of the back-end.<br> Below you can
-                view some of my recent works: </p>
+                <br> I'm a full-stack web developer.<br> Below you can view some of my recent works: </p>
             </div>
           </div>
         </div>
       </div>
-
+    </div>
   </section>
   <!-- /About Me  -->
 
   <!-- Projects -->
-  <hr id="project">
-  <hr id="second">
   <section class="projectpage" id="projects">
     <div class="container works">
       <div class="projects text-center">
@@ -93,7 +99,7 @@
             <div class="overlay2"></div>
             <div class="text-info">
               <h3>Perun Catalog</h3>
-              <p>Restful web app utilizing the Flask framework, use of SQL, OAuth2, and CRUD functionality.</p>
+              <p>Restful web app utilizing the Flask framework, use of SQL, OAuth2, and CRUD </p>
               <a class="button primary" href="https://catalogperun.herokuapp.com/" target="_blank"><span>Visit Website</span></a>
             </div>
           </div>
@@ -105,7 +111,7 @@
             <div class="overlay2"></div>
             <div class="text-info">
               <h3>Neighborhood Map</h3>
-              <p>Single page app utilizing KnockoutJS, Google Maps API, Foursquare API, in MVVM pattern. </p>
+              <p>Single page app utilizing KnockoutJS, Google Maps API, Foursquare API, in MVVM pattern </p>
               <a class="button primary" href="https://iperun.github.io/Neighborhood-Map/" target="_blank"><span>Visit Website</span></a>
             </div>
           </div>
@@ -117,7 +123,7 @@
             <div class="overlay2"></div>
             <div class="text-info">
               <h3>Movie Trailers</h3>
-              <p>Python program to generate a static webpage, displays a clickable poster to play its trailer.</p>
+              <p>Python program generating a static page, displaying a clickable poster to play trailers </p>
               <a class="button primary" href="https://iperun.github.io/Movie-Trailer-Website/fresh_tomatoes.html" target="_blank"><span>Visit Website</span></a>
             </div>
           </div>
@@ -144,7 +150,7 @@
       <h2 id="cred-title">Credentials and Education</h2>
       <div class="row split-cred">
         <div class="col-md-6">
-          <h3 id="udacity">Udacity Nanodegree</h3>
+          <h3 id="udacity">Udacity <span id="nano">Nanodegree</span></h3>
           <p id="ud-info">In this program I learned to create complex server-side web applications that use powerful relational databases to persistently store data. The skills learned and applications built can support any front end, and scale to support hundreds of
             thousands of users.</p>
         </div>
@@ -164,6 +170,9 @@
 
   <!-- Contact -->
   <section class="contactpage" id="contact">
+    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+      <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+    </svg>
     <div class="container contactpage">
       <h2 id="cnt">Contact Me</h2>
       <h3 id="thanks">Thanks for visiting!</h3>
@@ -213,6 +222,12 @@
   </section>
   <!-- /Contact -->
 
+  <footer>
+    <p><span id="copy">&copy;</span> Ivan Perun</p>
+  </footer>
+
+  <!-- Jquery Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Popper Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <!-- Bootstrap 4 Script -->
@@ -222,10 +237,6 @@
   <!-- Google Map Api -->
   <script src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&key=AIzaSyCJuEMieAPU-az8fmXVa1JcT5Ug6qEHqS0&v=3&callback=myMap">
   </script>
-
-  <footer>
-    <p>&copy; Ivan Perun</p>
-  </footer>
 
 </body>
 
