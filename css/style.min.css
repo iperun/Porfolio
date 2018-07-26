@@ -240,9 +240,10 @@ hr {
 }
 
 .home {
-  margin-top: 4em;
-  display: inline-block;
-  padding: 44px
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -364,10 +365,7 @@ h2 {
     margin-bottom: 10px;
     margin-top: 1px
   }
-  .home {
-    margin-left: 3em;
-    padding: 18px
-  }
+
   h1 {
     padding-top: .5em
   }
@@ -391,10 +389,7 @@ h2 {
     margin-bottom: 20px;
     margin-top: 1em
   }
-  .home {
-    margin-left: 3em;
-    padding: 18px
-  }
+
   h1 {
     padding-top: .8em
   }
@@ -415,10 +410,7 @@ h2 {
     margin-bottom: 1em;
     margin-top: 1em
   }
-  .home {
-    margin-left: 7em;
-    padding: 18px
-  }
+
   h1 {
     padding-top: .8em
   }
@@ -433,12 +425,6 @@ footer {
   bottom: .1%;
   color: #ffffff6b;
   left: 2%
-}
-
-@media only screen and (max-height:570px) and (orientation:portrait) {
-  .home {
-    margin-top: 4em !important
-  }
 }
 
 @media only screen and (max-height:660px) and (orientation:portrait) {
@@ -457,11 +443,7 @@ footer {
     margin-bottom: 1.5em;
     margin-top: 1.5em
   }
-  .home {
-    margin-top: 6em;
-    margin-left: 2em;
-    padding: 20px
-  }
+
   .header-nav {
     width: 100%
   }
@@ -490,11 +472,7 @@ footer {
     margin-bottom: 2em;
     margin-top: 2em
   }
-  .home {
-    margin-top: 8.5em;
-    margin-left: 3em;
-    padding: 30px
-  }
+
   .header-nav {
     width: 100%
   }
@@ -505,6 +483,36 @@ footer {
     padding-left: 1.2em;
     padding-top: 3.5em
   }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn
+}
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-duration: 1.5s;
+  animation-fill-mode: both
 }
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio:1) {
@@ -523,11 +531,7 @@ footer {
     margin-bottom: 2em;
     margin-top: 2em
   }
-  .home {
-    margin-top: 8em;
-    margin-left: 12em;
-    padding: 54px
-  }
+
   h1 {
     font-size: 5em;
     padding-top: 1.5em
@@ -557,11 +561,7 @@ footer {
     margin-bottom: 2em;
     margin-top: 1.5em
   }
-  .home {
-    margin-top: 5em;
-    margin-left: 25em;
-    padding: 40px
-  }
+
   h1 {
     font-size: 5em;
     padding-top: 1.5em
@@ -591,11 +591,7 @@ footer {
     margin-bottom: 2em;
     margin-top: 1.5em
   }
-  .home {
-    margin-top: 5em;
-    margin-left: 21em;
-    padding: 40px
-  }
+
   h1 {
     font-size: 7em;
     padding-top: 1.5em
