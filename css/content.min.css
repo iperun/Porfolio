@@ -438,7 +438,7 @@ h4 {
 .modal {
   display: none;
   position: fixed;
-  z-index: 90;
+  z-index: 99;
   padding-top: 10em;
   left: 0;
   top: 0;
