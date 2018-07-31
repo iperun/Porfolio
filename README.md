@@ -3,7 +3,7 @@
 ### Project Overview
 Design of my Portfolio, where you can check out some of my works and contact me.
 
-![Portfolio](https://i.gyazo.com/8892dfcb4f969f1d03dc357b0d39c521.gif "Portfolio")
+![Portfolio](https://i.gyazo.com/433a1fcee458ace25f7f92f9898a1c4b.mp4?_ga=2.67190807.788003300.1532977457-903438738.1525731710"Portfolio")
 
 ### To get started
 - Visit the site [HERE](http://perundesign.com/)
