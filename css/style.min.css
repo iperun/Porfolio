@@ -3,18 +3,22 @@
   padding: 0
 }
 
-html, body {
+html,
+body {
   height: 100%
 }
 
+#awesome {
+  position: fixed;
+}
+
 body {
-  background-image: url(../img/yuriy-garnaev-395879-unsplash.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #303139;
-  font-family: 'Titillium Web', sans-serif
+  font-family: 'Audiowide', cursive;
 }
 
 .loader {
@@ -62,11 +66,17 @@ body {
 
 .header-logo a {
   display: block;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 0;
   outline: 0;
   border: none;
-  width: 136px
+  width: 180px;
+  box-shadow: 0px 2px 0px #F44336;
+  transition: all .3s linear;
+}
+
+.header-logo a:hover {
+  box-shadow: 0px 2px 0px #fff;
 }
 
 img {
@@ -74,11 +84,127 @@ img {
 }
 
 .name {
-  color: #ee5253
+  color: #f44336e0
 }
 
+/* ##################################### */
+
+/* Global Button Styles */
+
+.col-md-5 {
+  margin-right: 5%;
+  padding-top: 1.5em;
+  margin: 0px 14%;
+}
+
+a.animated-button:link,
+a.animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 15px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: .3em;
+  border-radius: 0;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+a.animated-button:link:after,
+a.animated-button:visited:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+}
+
+a.animated-button:link:hover,
+a.animated-button:visited:hover {
+  color: #FFF;
+  text-shadow: none;
+}
+
+a.animated-button:link:hover:after,
+a.animated-button:visited:hover:after {
+  height: 450%;
+}
+
+a.animated-button:link,
+a.animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 15px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 0;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: .08em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+a.animated-button.explore {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: 2px solid #a1d3d3;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+a.animated-button.explore:hover {
+  color: #000 !important;
+  background-color: transparent;
+  text-shadow: nthree;
+}
+
+a.animated-button.explore:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+
+a.animated-button.explore:before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: '';
+  color: #000 !important;
+  background: #a1d3d3;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/* ################################################# */
 .header-nav {
-  background: rgb(19, 19, 21);
+  background: rgb(0, 0, 0);
   text-align: center;
   padding: 2em 2em 2em 2em;
   height: 100%;
@@ -92,8 +218,8 @@ img {
   -ms-transform: translateX(100%);
   transform: translateX(100%);
   visibility: hidden;
-  border-left: 1px solid rgba(0, 0, 0, .59);
-  border-right: 1px solid rgba(0, 0, 0, .59)
+  border-left: 1px solid rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0)
 }
 
 .header-nav h3 {
@@ -101,7 +227,7 @@ img {
   letter-spacing: .26em;
   margin-bottom: 4em;
   margin-top: .55em;
-  color: #ee5253
+  color: #f44336
 }
 
 .header-nav-list {
@@ -114,7 +240,8 @@ img {
   line-height: 4.2em
 }
 
-.header-nav-list a, .header-nav-list a:visited {
+.header-nav-list a,
+.header-nav-list a:visited {
   color: #CECFD0
 }
 
@@ -132,7 +259,7 @@ img {
 }
 
 hr {
-  border-top: 1px solid #22394ba3
+  border-top: 1px solid rgba(51, 51, 51, 0.39)
 }
 
 .fa-linkedin {
@@ -164,7 +291,8 @@ hr {
   z-index: 2
 }
 
-.header-nav-close span::before, .header-nav-close span::after {
+.header-nav-close span::before,
+.header-nav-close span::after {
   content: "";
   display: block;
   height: 2px;
@@ -213,10 +341,10 @@ hr {
 }
 
 .header-menu-toggle {
-  color: #c8d6e5;
+  color: #fff;
   position: fixed;
   right: 38px;
-  top: 46px;
+  top: 12px;
   height: 42px;
   width: 42px;
   line-height: 42px;
@@ -251,56 +379,56 @@ hr {
   position: absolute;
   left: 50%;
   top: 48%;
-  background-color: #ee5253
+  background-color: #f44336
 }
 
-.header-menu-icon::before, .header-menu-icon::after {
+.header-menu-icon::before,
+.header-menu-icon::after {
   content: '';
-  width: 136%;
+  width: 126%;
   height: 100%;
   background-color: inherit;
   position: absolute
 }
 
 .header-menu-icon::before {
-  top: 9px
+  top: 7px
 }
 
 .header-menu-icon::after {
-  bottom: 9px
+  bottom: 7px
 }
 
 .home {
   position: absolute;
-  top: 44%;
-  left: 50%;
+  top: 41%;
+  left: 36%;
   transform: translate(-50%, -50%)
 }
 
 h1 {
-  color: #c8d6e5;
-  font-family: 'Righteous', cursive;
-  text-shadow: 4px 4px 4px #212529;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
   font-size: 4em;
-  letter-spacing: 5px
+  letter-spacing: 8px
 }
 
 h2 {
-  font-family: 'News Cycle', sans-serif;
-  color: #c8d6e5;
-  text-shadow: 2px 2px 5px #212529;
+  font-family: 'Audiowide', cursive;
+  color: #fff;
   padding-left: 2px;
-  font-size: 1.5em
+  font-size: 1.5em;
+  letter-spacing: 1px;
 }
 
 .social {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-family: 'Righteous', sans-serif;
+  font-family: 'Audiowide', cursive;
   list-style: none;
   position: absolute;
-  bottom: 5%;
+  bottom: 1%;
   right: 2em
 }
 
@@ -315,7 +443,8 @@ h2 {
   height: 33px
 }
 
-.social i, .social span {
+.social i,
+.social span {
   position: absolute;
   -webkit-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
@@ -458,6 +587,7 @@ h2 {
   }
 
   h2 {
+    line-height: 5%;
     padding-left: 3em;
     padding-top: .5em
   }
@@ -465,14 +595,15 @@ h2 {
 
 footer {
   position: absolute;
-  bottom: .1%;
+  bottom: 0;
   color: #ffffff6b;
   left: 2%
 }
 
 @media only screen and (max-height:660px) and (orientation:portrait) {
   .header-logo a {
-    width: 110px;
+    width: 140px;
+    margin-top: 17px;
   }
 
   .header-nav-list li {
@@ -498,13 +629,64 @@ footer {
   }
 
   h1 {
-    padding-top: 1.5em
+    padding-top: 1.5em;
+    font-size: 3em;
+    margin-left: 10%;
   }
 
   h2 {
-    padding-left: 1.2em;
-    padding-top: 2em
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2em;
+    font-size: 1.3em;
   }
+
+  .social {
+    bottom: 0;
+    right: 5%;
+    margin-bottom: 1%;
+  }
+
+  .social i {
+    border: none;
+    font-size: 24px;
+  }
+
+  footer p {
+    margin-bottom: 0 !important;
+    font-size: 14px;
+  }
+}
+
+.music {
+  position: absolute;
+  width: 80px;
+  display: inline-block;
+  bottom: 53%;
+  left: 106%;
+}
+
+.music img {
+  display: inline-block;
+  width: 40px;
+}
+
+.music button {
+  display: inline-block;
+  font-size: 8px;
+  font-weight: 900;
+  width: 20px;
+  height: 20px;
+  color: #000000;
+  background: #ffffffe0;
+  border: 1px solid #ffffffe0;
+  border-radius: 3px;
+  transition: all .3s ease;
+}
+
+.music button:hover {
+  background: #a1d3d3;
+  border: 1px solid #a1d3d3;
 }
 
 @media only screen and (min-height:661px) and (max-height:900px) and (orientation:portrait) {
@@ -631,6 +813,7 @@ footer {
   }
 
   h2 {
+    margin-right: 5%;
     padding-left: 3.6em;
     padding-top: 3.5em
   }
