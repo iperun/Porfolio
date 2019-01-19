@@ -19,6 +19,11 @@
   <!-- Jquery Script -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js"></script>
+  <script>
+    window.onload = function() {
+      var context = new AudioContext();
+    }
+    </script>
 </head>
 
 <body>
@@ -89,7 +94,6 @@
           class="fa fa-envelope"></i><span id="EML">Email</span></a>
     </li>
   </ul>
-  <iframe src="Factory-On-Mercury.mp3" allow="autoplay" id="audio"></iframe>
   <audio autoplay id="myAudio" autoplay loop>
     <source src="Factory-On-Mercury.mp3" type="audio/mpeg">
     Your browser does not support the audio tag.
@@ -97,7 +101,7 @@
 
   <script type="text/javascript">
     var audio = document.getElementById("myAudio");
-    audio.volume = 0.35;
+    audio.volume = 0.20;
 
     function pauseAudio() {
       audio.pause();
