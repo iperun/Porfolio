@@ -558,7 +558,7 @@ footer {
   }
 
   .music {
-    display: none !important;
+    visibility: hidden;
   }
 
   h1 {
@@ -576,11 +576,11 @@ footer {
   }
 
   .social {
-    display: none;
+    visibility: hidden;
   }
 
   footer {
-    display: none;
+    visibility: hidden;
   }
 }
 
@@ -630,6 +630,12 @@ footer {
     padding-top: .8em;
     font-size: 3em
   }
+
+  .music,
+  footer {
+    visibility: hidden;
+  }
+
 }
 
 @media only screen and (min-width:731px) and (max-width:830px) and (orientation:landscape) {
@@ -669,6 +675,11 @@ footer {
     width: 50%;
     padding-left: 0;
     padding-top: 0;
+  }
+
+  .music,
+  footer {
+    visibility: hidden;
   }
 
 }
@@ -728,7 +739,7 @@ footer {
   .social i {
     border: none;
     font-size: 24px;
-    display: none;
+    visibility: hidden;
   }
 
   footer {
@@ -747,7 +758,7 @@ footer {
   }
 
   .music {
-    display: none !important;
+    visibility: hidden;
   }
 }
 
@@ -820,8 +831,9 @@ footer {
     width: 90%;
   }
 
-  .social {
-    display: none;
+  .social,
+  .music {
+    visibility: hidden;
   }
 
 }

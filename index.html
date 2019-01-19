@@ -89,7 +89,7 @@
           class="fa fa-envelope"></i><span id="EML">Email</span></a>
     </li>
   </ul>
-  <audio autoplay id="myAudio" autoplay="true">
+  <audio autoplay id="myAudio" autoplay loop>
     <source src="Factory-On-Mercury.mp3" type="audio/mpeg">
     Your browser does not support the audio tag.
   </audio>
@@ -97,20 +97,11 @@
   <script type="text/javascript">
     var audio = document.getElementById("myAudio");
     audio.volume = 0.35;
+
+    function pauseAudio() {
+      audio.pause();
+    }
   </script>
-
-  <script>
-    var p = document.getElementById("myAudio"); 
-    
-    function playAudio() { 
-      p.play(); 
-    } 
-    
-    function pauseAudio() { 
-      p.pause(); 
-    } 
-    </script>
-
   <script id="vertexShader" type="x-shader/x-vertex">
     uniform float u_time;
 
