@@ -4,7 +4,7 @@ let uniforms;
 
 function init() {
     container = document.getElementById('awesome');
-    camera = new THREE.PerspectiveCamera(-60, window.innerWidth / window.innerHeight, 1, 1100);
+    camera = new THREE.PerspectiveCamera(-80, window.innerWidth / window.innerHeight, 1, 1200);
     camera.position.z = -200;
     camera.position.x = 680;
     console.log(camera.lookAt(0, 0, -100));
@@ -21,7 +21,7 @@ function init() {
     uniforms = {
         u_time: {
             type: "f",
-            value: 50.0
+            value: -170.0
         },
         u_resolution: {
             type: "v2",
